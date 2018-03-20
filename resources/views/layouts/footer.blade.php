@@ -2,8 +2,8 @@
       <div class="container">
         <hr>
         <footer>
-          © 2007 - 2016 Công Ty Cổ Phần Bán Lẻ Kỹ Thuật Số SCODEWEB / Địa chỉ: TP. BMT / GPĐKKD số: Websitr đang thử nghiệm. <br>
-          Thiết Kế Bởi : <a href="https://www.facebook.com/scodeweb" title="" target="#">Lhson</a>
+          © 2018 - Đại học Công nghệ TPHCM<br>
+          Thiết kế bởi: Nhóm sinh viên khoa Công nghệ thông tin Hutech 
       </footer>
       </div>
     </div>

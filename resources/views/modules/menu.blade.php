@@ -22,16 +22,16 @@
             <ul class="nav navbar-nav">
               <li> <a href="{!!url('')!!}" title="" style="color: #FFFFFF;background-color: #2c3e50;"><b class="glyphicon glyphicon-home"></b> Trang chủ </a> </li>
               <li>
-                <a href="{!!url('mobile')!!}" >Điện Thoại </a>                          
+                <a href="{!!url('mobile')!!}" >Giày nam </a>                          
               </li>                                                  
               <li >
-                <a href="{!!url('laptop')!!}" > Laptop </a>                
+                <a href="{!!url('laptop')!!}" > Giày nữ </a>               
               </li>    
-              <li>
+              <!-- <li>
                 <a href="{!!url('pc')!!}" > Máy Tính </a>                
-              </li>                                          
+              </li>                                           -->
               <li>
-               <a href="{!!url('tin-tuc')!!}" > Tin Tức - Khuyễn Mãi </a>                    
+               <a href="{!!url('tin-tuc')!!}" > Khuyến mãi</a>                    
               </li>                                            
             </ul>
              <ul class="nav navbar-nav pull-right">
@@ -45,7 +45,7 @@
                       <thead>
                       <tr>
                         <th>Ảnh</th>
-                        <th>LS</th>
+                        <th>SL</th>
                         <th>Tên <SPAN></SPAN></th>
                         <th>Giá</th>
                       </tr>
@@ -70,13 +70,13 @@
                       <thead>
                       <tr>
                         <th>Ảnh</th>
-                        <th>LS</th>
+                        <th>SL</th>
                         <th>Tên <SPAN></SPAN></th>
                         <th>Giá</th>
                       </tr>
                     </thead>
                        <tbody>                       
-                        <td colspan="3">Hện đang trống</td>                        
+                        <td colspan="3">Hiện đang trống</td>                        
                        </tbody>                       
                      </table> 
                   </div>
@@ -94,7 +94,7 @@
 
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="{{ url('/user') }}">Thông tin cá nhân</a></li>
-                            <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                            <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Đăng xuất</a></li>
                         </ul>
                     </li>
                 @endif
@@ -107,10 +107,10 @@
   <!-- left slider bar nav -->
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; Đóng</a>
-    <a href="{!!url('mobile')!!}">Điện Thoại</a>
-    <a href="{!!url('laptop')!!}">Laptop</a>
-    <a href="{!!url('pc')!!}">Máy Tính</a>
-    <a href="{!!url('tin-tuc')!!}">Tin Tức</a>
+    <a href="{!!url('mobile')!!}">Giày nam</a>
+    <a href="{!!url('laptop')!!}">Giày nữ</a>
+    <!-- <a href="{!!url('pc')!!}">Máy Tính</a> -->
+    <a href="{!!url('tin-tuc')!!}">Khuyến mãi</a>
     <a href="{!!url('gio-hang')!!}"> <span class="glyphicon glyphicon-shopping-cart"><span class="badge">{!!Cart::count()!!}</span></span> Giỏ Hàng </a>     
   </div>
   <!-- /left slider bar nav -->

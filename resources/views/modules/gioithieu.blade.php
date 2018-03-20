@@ -3,22 +3,21 @@
   <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 no-padding">
     <div class="row gioithieu">            
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <a href="" title=""><strong>GIỚI THIỆU CÔNG TY</strong></a>
+        <a href="" title=""><strong>GIỚI THIỆU</strong></a>
           <li> <a href="#" title="">Các chính sách</a></li> 
           <li> <a href="#" title="">Câu hỏi thường gặp</a></li> 
-          <li> <a href="#" title="">Hệ thống bảo hành</a></li> 
       </div>
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <a href="" title=""><strong>TUYỂN DỤNG</strong></a>
-          <li> <a href="#" title="">Tuyển dụng mới nhất</a></li> 
-          <li> <a href="#" title="">Hưỡng dẫn mua hàng Online</a></li> 
-          <li> <a href="#" title="">Chính sách mua trả góp</a></li> 
+        <a href="" title=""><strong>HƯỚNG DẪN</strong></a>
+          <li> <a href="#" title="">Hướng dẫn thanh toán</a></li> 
+          <li> <a href="#" title="">Hưỡng dẫn mua hàng Online</a></li>
+          <li> <a href="#" title="">Tips bảo vệ giày</a></li> 
       </div>
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <a href="" title=""><strong>HỆ THỐNG CỬA HÀNG</strong></a>                
-          <li> <a href="#" title="">Kiểm tra hàng chính hãng</a></li> 
-          <li> <a href="#" title="">Máy đổi trả</a></li> 
-          <li> <a href="#" title="">Hệ thống cửa hàng</a></li> 
+        <a href="" title=""><strong>CHÍNH SÁCH</strong></a>
+          <li> <a href="#" title="">Chương trình bảo hành</a></li>                   
+          <li> <a href="#" title="">Hàng đổi trả</a></li> 
+          <!-- <li> <a href="#" title="">Hệ thống cửa hàng</a></li>  -->
       </div>
     </div>
   </div>
@@ -26,11 +25,11 @@
     <p>Hỗ trợ thanh toán  <img src="{!!url('public/images/pay.png')!!}" alt=""> </p>
     <div class="gt-left pull-left">
       <p><small>Tư vẫn miễn phí (24/7)</small></p> 
-      <strong>1800 xxxx</strong>
+      <strong>0868964539</strong>
     </div>
      <div class="gt-right pull-right">
-      <p><small>Góp ý, phản ánh(8h00 - 22h00)</small></p>
-      <strong>1800 xxxx</strong>
+      <p><small>Giờ mở cửa (8h00 - 22h00)</small></p>
+      <strong>0868964539</strong>
     </div>
   </div>
 </div>
