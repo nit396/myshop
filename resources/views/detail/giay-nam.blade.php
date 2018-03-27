@@ -3,7 +3,7 @@
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <h3 class="panel-title">
       <span class="glyphicon glyphicon-home"><a href="{!!url('/')!!}" title=""> Home</a></span> 
-      <span class="glyphicon glyphicon-chevron-right" style="font-size: 11px;"></span><a href="{!!url('/mobile')!!}" title=""> Điện thoại</a>
+      <span class="glyphicon glyphicon-chevron-right" style="font-size: 11px;"></span><a href="{!!url('/giaynam')!!}" title=""> Giày nam</a>
       <span class="glyphicon glyphicon-chevron-right" style="font-size: 11px;"></span> <a href="#" title="">{!!$slug!!}</a>
     </h3>              
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 no-padding">              
@@ -14,7 +14,7 @@
               <div class="row">
               <!-- hot new content -->
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
-                  <h3 class="pro-detail-title"><a href="{!!url('/mobile/'.$data->id.'-'.$data->slug)!!}" title="">{!!$data->name!!}</a></h3>
+                  <h3 class="pro-detail-title"><a href="{!!url('/giaynam/'.$data->id.'-'.$data->slug)!!}" title="">{!!$data->name!!}</a></h3>
                   <hr>
                   <div class="row">
                     <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
