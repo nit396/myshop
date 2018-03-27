@@ -77,19 +77,6 @@
 		</div><!--/.row-->
 		
 		<div class="row">
-			<div class="col-lg-12">
-				<div class="panel panel-default">
-					<div class="panel-heading">Tổng quan trang cửa hàng</div>
-					<div class="panel-body">
-						<div class="canvas-wrapper">
-							<canvas class="main-chart" id="line-chart" height="100" width="600"></canvas>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/.row-->
-		
-		<div class="row">
 			<div class="col-xs-6 col-md-3">
 				<div class="panel panel-default">
 					<div class="panel-body easypiechart-panel">
@@ -130,7 +117,7 @@
 								
 		<div class="row">
 			<div class="col-md-8">
-				<small>Coppyright 2016</small>
+				<small>&copy; Nhóm sinh viên Hutech</small>
 			</div><!--/.col-->
 		</div><!--/.row-->
 	</div>	<!--/.main-->
