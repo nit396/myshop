@@ -109,7 +109,6 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; Đóng</a>
     <a href="{!!url('mobile')!!}">Giày nam</a>
     <a href="{!!url('laptop')!!}">Giày nữ</a>
-    <!-- <a href="{!!url('pc')!!}">Máy Tính</a> -->
     <a href="{!!url('tin-tuc')!!}">Khuyến mãi</a>
     <a href="{!!url('gio-hang')!!}"> <span class="glyphicon glyphicon-shopping-cart"><span class="badge">{!!Cart::count()!!}</span></span> Giỏ Hàng </a>     
   </div>
