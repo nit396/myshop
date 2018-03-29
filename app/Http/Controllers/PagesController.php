@@ -18,27 +18,20 @@ class PagesController extends Controller
 {
     public function index()
     {
-        // mobile
-        $mobile = DB::table('products')
+        $giaynam = DB::table('products')
                 ->join('category', 'products.cat_id', '=', 'category.id')
                 ->join('pro_details', 'pro_details.pro_id', '=', 'products.id')
                 ->where('category.parent_id','=','1')
                 ->select('products.*','pro_details.cpu','pro_details.ram','pro_details.screen','pro_details.vga','pro_details.storage','pro_details.exten_memmory','pro_details.cam1','pro_details.cam2','pro_details.sim','pro_details.connect','pro_details.pin','pro_details.os','pro_details.note')
                 ->paginate(9);
-        $lap = DB::table('products')
+        $giaynu = DB::table('products')
                 ->join('category', 'products.cat_id', '=', 'category.id')
                 ->join('pro_details', 'pro_details.pro_id', '=', 'products.id')
                 ->where('category.parent_id','=','2')
                 ->select('products.*','pro_details.cpu','pro_details.ram','pro_details.screen','pro_details.vga','pro_details.storage','pro_details.exten_memmory','pro_details.cam1','pro_details.cam2','pro_details.sim','pro_details.connect','pro_details.pin','pro_details.os','pro_details.note')
                 ->paginate(6);
-        $pc = DB::table('products')
-                ->join('category', 'products.cat_id', '=', 'category.id')
-                ->join('pro_details', 'pro_details.pro_id', '=', 'products.id')
-                ->where('category.parent_id','=','19')
-                ->select('products.*','pro_details.cpu','pro_details.ram','pro_details.screen','pro_details.vga','pro_details.storage','pro_details.exten_memmory','pro_details.cam1','pro_details.cam2','pro_details.sim','pro_details.connect','pro_details.pin','pro_details.os','pro_details.note')
-                ->paginate(4);
 
-    	return view('home',['mobile'=>$mobile,'laptop'=>$lap,'pc'=>$pc]);
+    	return view('home',['giaynam'=>$giaynam,'giaynu'=>$giaynu]);
     }
     public function addcart($id)
     {
@@ -119,37 +112,25 @@ class PagesController extends Controller
     }
     public function getcate($cat)
     {
-    	if ($cat == 'mobile') {
-            // mobile
-            $mobile = DB::table('products')
+    	if ($cat == 'giaynam') {
+            $giaynam = DB::table('products')
                 ->join('category', 'products.cat_id', '=', 'category.id')
                 ->join('pro_details', 'pro_details.pro_id', '=', 'products.id')
                 ->where('category.parent_id','=','1')
                 ->select('products.*','pro_details.cpu','pro_details.ram','pro_details.screen','pro_details.vga','pro_details.storage','pro_details.exten_memmory','pro_details.cam1','pro_details.cam2','pro_details.sim','pro_details.connect','pro_details.pin','pro_details.os','pro_details.note')
                 ->paginate(12);
-    		return view('category.mobile',['data'=>$mobile]);
+    		return view('category.giaynam',['data'=>$giaynam]);
     	} 
-        elseif ($cat == 'laptop') {
-            // mobile
-            $lap = DB::table('products')
+        elseif ($cat == 'giaynu') {
+            $giaynu = DB::table('products')
                 ->join('category', 'products.cat_id', '=', 'category.id')
                 ->join('pro_details', 'pro_details.pro_id', '=', 'products.id')
                 ->where('category.parent_id','=','2')
                 ->select('products.*','pro_details.cpu','pro_details.ram','pro_details.screen','pro_details.vga','pro_details.storage','pro_details.exten_memmory','pro_details.cam1','pro_details.cam2','pro_details.sim','pro_details.connect','pro_details.pin','pro_details.os','pro_details.note')
                 ->paginate(12);
-            return view('category.laptop',['data'=>$lap]);
+            return view('category.giaynu',['data'=>$giaynu]);
         }
-        elseif ($cat == 'pc') {
-            // mobile
-        $pc = DB::table('products')
-                ->join('category', 'products.cat_id', '=', 'category.id')
-                ->join('pro_details', 'pro_details.pro_id', '=', 'products.id')
-                ->where('category.parent_id','=','19')
-                ->select('products.*','pro_details.cpu','pro_details.ram','pro_details.screen','pro_details.vga','pro_details.storage','pro_details.exten_memmory','pro_details.cam1','pro_details.cam2','pro_details.sim','pro_details.connect','pro_details.pin','pro_details.os','pro_details.note')
-                ->paginate(8);
-            return view('category.pc',['data'=>$pc]);
-        }
-        elseif ($cat == 'tin-tuc') {
+        elseif ($cat == 'khuyenmai') {
             $new =  DB::table('news')
                     ->orderBy('created_at', 'desc')
                     ->paginate(3);
@@ -165,33 +146,26 @@ class PagesController extends Controller
     }
     public function detail($cat,$id,$slug)
     {
-        if ($cat =='tin-tuc') {
+        if ($cat =='khuyenmai') {
             $new = News::where('id',$id)->first();
             return view('detail.news',['data'=>$new,'slug'=>$slug]);
-        } elseif ($cat =='mobile') {
-            $mobile = Products::where('id',$id)->first();
-            if (empty($mobile)) {
+        } elseif ($cat =='giaynam') {
+            $giaynam = Products::where('id',$id)->first();
+            if (empty($giaynam)) {
                 return view ('errors.503');
                 } else {
-                   return view ('detail.mobile',['data'=>$mobile,'slug'=>$slug]);
+                   return view ('detail.giaynam',['data'=>$giaynam,'slug'=>$slug]);
                }
         }
-        elseif ($cat =='laptop') {
-            $lap = Products::where('id',$id)->first();
-            if (empty($lap)) {
+        elseif ($cat =='giaynu') {
+            $giaynu = Products::where('id',$id)->first();
+            if (empty($giaynu)) {
             return redirect()->route('index');
             } else {
-           return view ('detail.laptop',['data'=>$lap,'slug'=>$slug]);
+           return view ('detail.giaynu',['data'=>$giaynu,'slug'=>$slug]);
             }
         }
-        elseif ($cat =='pc') {            
-            $pc = Products::where('id',$id)->first();
-            if (empty($pc)) {
-                return redirect()->route('index');
-            } else {
-                return view ('detail.pc',['data'=>$pc,'slug'=>$slug]);
-            }
-        } else {
+        else {
             return redirect()->route('index');
         }
     }

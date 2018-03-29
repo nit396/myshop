@@ -22,13 +22,13 @@
             <ul class="nav navbar-nav">
               <li> <a href="{!!url('')!!}" title="" style="color: #FFFFFF;background-color: #2c3e50;"><b class="glyphicon glyphicon-home"></b> Trang chủ </a> </li>
               <li>
-                <a href="{!!url('giay-nam')!!}" >Giày nam </a>                          
+                <a href="{!!url('/giaynam')!!}" >Giày nam </a>                          
               </li>                                                  
               <li >
-                <a href="{!!url('giay-nu')!!}" > Giày nữ </a>               
+                <a href="{!!url('/giaynu')!!}" > Giày nữ </a>               
               </li>                                        
               <li>
-               <a href="{!!url('tin-tuc')!!}" > Khuyến mãi</a>                    
+               <a href="{!!url('/khuyenmai')!!}" > Khuyến mãi</a>                    
               </li>                                            
             </ul>
              <ul class="nav navbar-nav pull-right">
@@ -104,9 +104,9 @@
   <!-- left slider bar nav -->
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; Đóng</a>
-    <a href="{!!url('giay-nam')!!}">Giày nam</a>
-    <a href="{!!url('giay-nu')!!}">Giày nữ</a>
-    <a href="{!!url('tin-tuc')!!}">Khuyến mãi</a>
+    <a href="{!!url('giaynam')!!}">Giày nam</a>
+    <a href="{!!url('giaynu')!!}">Giày nữ</a>
+    <a href="{!!url('khuyenmai')!!}">Khuyến mãi</a>
     <a href="{!!url('gio-hang')!!}"> <span class="glyphicon glyphicon-shopping-cart"><span class="badge">{!!Cart::count()!!}</span></span> Giỏ Hàng </a>     
   </div>
   <!-- /left slider bar nav -->

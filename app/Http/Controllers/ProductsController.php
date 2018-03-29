@@ -70,44 +70,44 @@ class ProductsController extends Controller
     	$pro->save();    	
     	$pro_id =$pro->id;
 
-    	$detail = new Pro_details();
+    	// $detail = new Pro_details();
 
-    	$detail->cpu = $rq->txtCpu;
-    	$detail->ram = $rq->txtRam;
-    	$detail->screen = $rq->txtScreen;
-    	$detail->vga = $rq->txtVga;
-    	$detail->storage = $rq->txtStorage;
-    	$detail->exten_memmory =$rq->txtExtend;
-    	$detail->cam1 = $rq->txtCam1;
-    	$detail->cam2 = $rq->txtCam2;
-    	$detail->sim = $rq->txtSIM;
-    	$detail->connect = $rq->txtConnect;
-    	$detail->pin = $rq->txtPin;
-    	$detail->os = $rq->txtOs;
-        $detail->note = $rq->txtNote;
-    	$detail->pro_id = $pro_id;
+    	// $detail->cpu = $rq->txtCpu;
+    	// $detail->ram = $rq->txtRam;
+    	// $detail->screen = $rq->txtScreen;
+    	// $detail->vga = $rq->txtVga;
+    	// $detail->storage = $rq->txtStorage;
+    	// $detail->exten_memmory =$rq->txtExtend;
+    	// $detail->cam1 = $rq->txtCam1;
+    	// $detail->cam2 = $rq->txtCam2;
+    	// $detail->sim = $rq->txtSIM;
+    	// $detail->connect = $rq->txtConnect;
+    	// $detail->pin = $rq->txtPin;
+    	// $detail->os = $rq->txtOs;
+        // $detail->note = $rq->txtNote;
+    	// $detail->pro_id = $pro_id;
 
-        if ($rq->txtCam1=='') {
-            $detail->cam1='không có';
-        }
-        if ($rq->txtCam2=='') {
-            $detail->cam2='không có';
-        }
-        if ($rq->exten_memmory =='') {
-            $detail->exten_memmory= $rq->txtCase;
-        }
-        if ($rq->pin =='') {
-            $detail->pin= 'Không có';
-        }
-         if ($rq->sim =='') {
-            $detail->sim= 'Không có';
-        }
-         if ($rq->note =='') {
-            $detail->note= 'Không có';
-        }
+        // if ($rq->txtCam1=='') {
+        //     $detail->cam1='không có';
+        // }
+        // if ($rq->txtCam2=='') {
+        //     $detail->cam2='không có';
+        // }
+        // if ($rq->exten_memmory =='') {
+        //     $detail->exten_memmory= $rq->txtCase;
+        // }
+        // if ($rq->pin =='') {
+        //     $detail->pin= 'Không có';
+        // }
+        //  if ($rq->sim =='') {
+        //     $detail->sim= 'Không có';
+        // }
+        //  if ($rq->note =='') {
+        //     $detail->note= 'Không có';
+        // }
 
-    	$detail->created_at = new datetime;
-    	$detail->save();    	
+    	// $detail->created_at = new datetime;
+    	// $detail->save();    	
 
     	if ($rq->hasFile('txtdetail_img')) {
     		$df = $rq->file('txtdetail_img');

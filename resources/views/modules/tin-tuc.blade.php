@@ -11,7 +11,7 @@
     <a href="#" title=""><img src="{!!url('uploads/news/'.$row->images)!!}" alt="" width="95%" height="99%"> </a>
   </div>
   <div class="col-lg-8">
-    <h4><a href="{!!url('/tin-tuc/'.$row->id.'-'.$row->slug)!!}" title="{!!$row->title!!}">{!!$row->title!!}</a></h4>
+    <h4><a href="{!!url('/khuyenmai/'.$row->id.'-'.$row->slug)!!}" title="{!!$row->title!!}">{!!$row->title!!}</a></h4>
     <p> 
       {!!$row->intro!!}
     </p>

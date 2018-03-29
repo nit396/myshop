@@ -45,10 +45,10 @@
                 @foreach($data as $row)
                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                      <a href="{!!url('/tin-tuc/'.$row->id.'-'.$row->slug)!!}" title="{!!$row->title!!}"><img src="{!!url('public/uploads/news/'.$row->images)!!}" alt="{!!$row->title!!}" width="90%" height="99%"> </a>
+                      <a href="{!!url('/khuyenmai/'.$row->id.'-'.$row->slug)!!}" title="{!!$row->title!!}"><img src="{!!url('public/uploads/news/'.$row->images)!!}" alt="{!!$row->title!!}" width="90%" height="99%"> </a>
                     </div>
                     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                      <h4><a href="{!!url('/tin-tuc/'.$row->id.'-'.$row->slug)!!}"" title="{!!$row->title!!}">{!!$row->title!!}</a></h4>
+                      <h4><a href="{!!url('/khuyenmai/'.$row->id.'-'.$row->slug)!!}"" title="{!!$row->title!!}">{!!$row->title!!}</a></h4>
                       <p> 
                         {!!$row->intro!!}
                       </p>
