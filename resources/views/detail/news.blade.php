@@ -71,7 +71,7 @@
         </div>
         <div class="panel-body no-padding">
         <?php 
-          $mobile = DB::table('products')
+          $giaynam = DB::table('products')
                 ->join('category', 'products.cat_id', '=', 'category.id')
                 ->join('pro_details', 'pro_details.pro_id', '=', 'products.id')
                 ->where('category.parent_id','=','1')
@@ -80,9 +80,9 @@
                 ->paginate(3); 
 
         ?>
-        @foreach($mobile as $row)
+        @foreach($giaynam as $row)
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
-            <div class="thumbnail mobile">              
+            <div class="thumbnail mo">              
               <div class="bt">
                 <div class="image-m pull-left">
                   <img class="img-responsive" src="{!!url('public/uploads/products/'.$row->images)!!}" alt="{!!$row->name!!}">
@@ -102,7 +102,7 @@
                 </div><!-- /div introl -->
               </div> <!-- /div bt -->
               <div class="ct">
-                <a href="{!!url('mobile/'.$row->id.'-'.$row->slug)!!}" title="Chi tiết">
+                <a href="{!!url('giaynam/'.$row->id.'-'.$row->slug)!!}" title="Chi tiết">
                   <span class="label label-info">Ưu đãi khi mua</span>   
                   @if ($row->promo1!='')
                     <li><span class="glyphicon glyphicon-ok-sign"></span>{!!$row->promo1!!}</li>
