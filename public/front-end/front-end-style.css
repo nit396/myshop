@@ -161,17 +161,17 @@ body {
   height: 35px;
   z-index: 11111111111;
 }
-/* / =======================mobile thumbnail */
-.mobile{
+/* / =======================giaynam thumbnail */
+.giaynam{
   height: 260px;
   position: relative;
 }
-.mobile .bt{
+.giaynam .bt{
    height: 210px;
   transition: all ease 0.9s; 
   padding: 0;
 }
-.mobile .ct {
+.giaynam .ct {
     opacity: 0;
     height: 200px; 
     width: 98%;
@@ -185,46 +185,46 @@ body {
     transform: rotate(0deg);
     padding: 10px;
 }
-.mobile .ct li{
+.giaynam .ct li{
   list-style: none;
   display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.mobile .ct a:hover {
+.giaynam .ct a:hover {
   text-decoration: none;
 }
-.mobile:hover .ct{
+.giaynam:hover .ct{
   opacity: 1;
 }
-.mobile:hover .bt{
+.giaynam:hover .bt{
   opacity: 0;
 }
-.mobile .image-m {
+.mobigiaynamle .image-m {
   width: 40%;
  height: 200px;
 }
-.mobile .image-m img {
+.giaynam .image-m img {
   width: 95%;
   height: 155px;
   margin: auto;
 }
-.mobile .intro {
+.giaynam .intro {
   width: 60%;
   height: 200px;
 }
-.mobile .intro li {
+.giaynam .intro li {
   list-style: none;
 }
 
-.mobile .intro li:last-child{
+.giaynam .intro li:last-child{
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.title-mobile {
+.title-giaynam {
   color: #2980b9;
   font-size: 16px;
 }
@@ -232,7 +232,7 @@ body {
   opacity: 0;
   transition: all ease 0.9s;   
 }
-.mobile:hover .add{
+.giaynam:hover .add{
   opacity: 1;
   transition: all ease 1.9s;    
 }
@@ -356,7 +356,7 @@ footer{
 .sum{
   padding-right:0;
 }
-/* ============== style san pham mobile================= */
+/* ============== style san pham giaynam================= */
 .khuyenmai,.chinhsach li{
  list-style: none;
 }
@@ -377,20 +377,20 @@ footer{
 .img-box{
   height: 280px;
 }
-.img-mobile{
+.img-giaynam{
   height: 270px;
   width: 75%;
   display: block;
   margin: 0 auto;
   transition: all ease 0.9s; 
 }
-.img-mobile:hover{
+.img-giaynam:hover{
   height: 279px;
   width: 85%;
   display: block;
   margin: 0 auto
 }
-.mobile-price{
+.giaynam-price{
  margin-left: 25%;
  color: #FEFEFE;
  font-size: 18px;
