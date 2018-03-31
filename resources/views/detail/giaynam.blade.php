@@ -19,7 +19,7 @@
                   <div class="row">
                     <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
                       <div class="img-box">
-                        <img class="img-responsive img-giaynam" src="{!!url('public/uploads/products/'.$data->images)!!}" alt="img responsive">
+                        <img class="img-responsive img-mobile" src="{!!url('public/uploads/products/'.$data->images)!!}" alt="img responsive">
                       </div>
                       <div class="img-slide">
                         <div class="panel panel-default text-center">        
@@ -249,7 +249,7 @@
         </div>
         <div class="panel-body no-padding">
         <?php 
-          $giaynam = DB::table('products')
+          $mobile = DB::table('products')
                 ->join('category', 'products.cat_id', '=', 'category.id')
                 ->join('pro_details', 'pro_details.pro_id', '=', 'products.id')
                 ->where('category.parent_id','=','1')
@@ -258,7 +258,7 @@
                 ->paginate(2); 
 
         ?>
-        @foreach($giaynam as $row)
+        @foreach($mobile as $row)
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
             <div class="thumbnail mobile">              
               <div class="bt">
@@ -280,7 +280,7 @@
                 </div><!-- /div introl -->
               </div> <!-- /div bt -->
               <div class="ct">
-                <a href="{!!url('giaynam/'.$row->id.'-'.$row->slug)!!}" title="Chi tiết">
+                <a href="{!!url('mobile/'.$row->id.'-'.$row->slug)!!}" title="Chi tiết">
                   <span class="label label-info">Ưu đãi khi mua</span>   
                   @if ($row->promo1!='')
                     <li><span class="glyphicon glyphicon-ok-sign"></span>{!!$row->promo1!!}</li>

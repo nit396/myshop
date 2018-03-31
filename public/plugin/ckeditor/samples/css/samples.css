@@ -3,7 +3,7 @@
  * For licensing, see LICENSE.md or http://ckeditor.com/license
  */
 @media (max-width: 900px) {
-  .global-is-giaynam-hidden {
+  .global-is-mobile-hidden {
     display: none !important;
   }
 }
@@ -632,9 +632,9 @@ body input.button-a.button-a-no-text:before {
   margin: -9px 0 0 -9px;
 }
 @media (max-width: 900px) {
-  body a.button-a.button-a-giaynam-collapsed,
-  body button.button-a.button-a-giaynam-collapsed,
-  body input.button-a.button-a-giaynam-collapsed {
+  body a.button-a.button-a-mobile-collapsed,
+  body button.button-a.button-a-mobile-collapsed,
+  body input.button-a.button-a-mobile-collapsed {
     -webkit-border-radius: 100px;
     -webkit-background-clip: padding-box;
     -moz-border-radius: 100px;
@@ -648,17 +648,17 @@ body input.button-a.button-a-no-text:before {
     position: relative;
     text-align: center;
   }
-  body a.button-a.button-a-giaynam-collapsed:before,
-  body button.button-a.button-a-giaynam-collapsed:before,
-  body input.button-a.button-a-giaynam-collapsed:before {
+  body a.button-a.button-a-mobile-collapsed:before,
+  body button.button-a.button-a-mobile-collapsed:before,
+  body input.button-a.button-a-mobile-collapsed:before {
     position: absolute;
     left: 50%;
     top: 50%;
     margin: -9px 0 0 -9px;
   }
-  body a.button-a.button-a-giaynam-collapsed:before,
-  body button.button-a.button-a-giaynam-collapsed:before,
-  body input.button-a.button-a-giaynam-collapsed:before {
+  body a.button-a.button-a-mobile-collapsed:before,
+  body button.button-a.button-a-mobile-collapsed:before,
+  body input.button-a.button-a-mobile-collapsed:before {
     position: absolute;
     left: 50%;
     top: 50%;

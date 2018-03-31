@@ -109,7 +109,7 @@
         </div>
         <div class="panel-body no-padding">
         <?php 
-          $giaynam = DB::table('products')
+          $mobile = DB::table('products')
                 ->join('category', 'products.cat_id', '=', 'category.id')
                 ->join('pro_details', 'pro_details.pro_id', '=', 'products.id')
                 ->where('category.parent_id','=','1')
@@ -118,15 +118,15 @@
                 ->paginate(2); 
 
         ?>
-        @foreach($giaynam as $row)
+        @foreach($mobile as $row)
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
-            <div class="thumbnail giaynam">              
+            <div class="thumbnail mobile">              
               <div class="bt">
                 <div class="image-m pull-left">
                   <img class="img-responsive" src="{!!url('public/uploads/products/'.$row->images)!!}" alt="{!!$row->name!!}">
                 </div>
                 <div class="intro pull-right">
-                  <h1><small class="title-giaynam">{!!$row->name!!}</small></h1>
+                  <h1><small class="title-mobile">{!!$row->name!!}</small></h1>
                   <li>{!!$row->intro!!}</li>
                   <span class="label label-info">Khuyễn mãi</span>   
                   @if ($row->promo1!='')
@@ -135,10 +135,12 @@
                     <li><span class="glyphicon glyphicon-ok-sign"></span>{!!$row->promo2!!}</li>
                   @elseif ($row->promo3!='')
                     <li><span class="glyphicon glyphicon-ok-sign"></span>{!!$row->promo3!!}</li>
+                  @endif 
+                    <li><span class="glyphicon glyphicon-ok-sign"></span>Cài đặt phần miềm, tải nhạc - ứng dụng miến phí</li> 
                 </div><!-- /div introl -->
               </div> <!-- /div bt -->
-              <!-- <div class="ct">
-                <a href="{!!url('giaynam/'.$row->id.'-'.$row->slug)!!}" title="Chi tiết">
+              <div class="ct">
+                <a href="{!!url('mobile/'.$row->id.'-'.$row->slug)!!}" title="Chi tiết">
                   <span class="label label-info">Ưu đãi khi mua</span>   
                   @if ($row->promo1!='')
                     <li><span class="glyphicon glyphicon-ok-sign"></span>{!!$row->promo1!!}</li>
@@ -155,7 +157,7 @@
                   <li><strong>HĐH</strong> :<i> {!!$row->os!!} </i> <strong> Bộ nhớ trong</strong> :<i> {!!$row->storage!!} </i></li> 
                   <li><strong>Pin</strong> :<i> {!!$row->pin!!}</i></li>
                 </a>
-              </div> -->
+              </div>
                 <span class="btn label-warning"><strong>{!!number_format($row->price)!!}</strong>Vnd </span>
                 <a href="{!!url('gio-hang/addcart/'.$row->id)!!}" class="btn btn-success pull-right add">Thêm vào giỏ </a>
             </div> <!-- / div thumbnail -->

@@ -14,7 +14,7 @@ namespace Monolog\Handler;
 use Monolog\Logger;
 
 /**
- * Sends notifications through the pushover api to giaynam phones
+ * Sends notifications through the pushover api to mobile phones
  *
  * @author Sebastian Göttschkes <sebastian.goettschkes@googlemail.com>
  * @see    https://www.pushover.net/api
