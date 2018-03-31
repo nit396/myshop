@@ -155,11 +155,11 @@ class ProductsController extends Controller
     	if ($p_id == 1) {
             $cat= Category::where('parent_id', '1')->get();
             $pro = Products::where('id',$id)->first();
-            return view('back-end.products.edit-giaynam',['pro'=>$pro,'cat'=>$cat,'loai'=>'Điện thoại']);    
+            return view('back-end.products.edit-giaynam',['pro'=>$pro,'cat'=>$cat,'loai'=>'Giày Nam']);    
         } elseif ($p_id ==2) {
             $cat= Category::where('parent_id', 2)->get();
             $pro = Products::where('id',$id)->first();
-            return view('back-end.products.edit-giaynam',['pro'=>$pro,'cat'=>$cat,'loai'=>'Laptop']);       
+            return view('back-end.products.edit-giaynam',['pro'=>$pro,'cat'=>$cat,'loai'=>'Giày Nữ']);       
         } elseif ($p_id ==19) {
             $cat= Category::where('parent_id', 19)->get();
             $pro = Products::where('id',$id)->first();

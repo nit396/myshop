@@ -2,12 +2,12 @@
 <div class="container hidden-xs">
     <div class="fluid_container">            
       <div class="camera_violet_skin" id="camera_wrap_1">
-        <div data-thumb="{!!url('public/images/slides/thumbs/qc1.png')!!}" data-src="{!!url('public/images/slides/thumbs/qc1.png')!!}">
+        <div data-thumb="{!!url('public/images/slides/thumbs/banner9.jpg')!!}" data-src="{!!url('public/images/slides/thumbs/banner9.jpg')!!}">
             <div class="camera_caption fadeFromBottom">
                 Sắm giày giá tốt. <em>Event mua giày</em>
             </div>
         </div>
-        <div data-thumb="{!!url('public/images/slides/thumbs/qc2.png')!!}" data-src="{!!url('public/images/slides/thumbs/qc2.png')!!}">
+        <div data-thumb="{!!url('public/images/slides/thumbs/banner8.jpg')!!}" data-src="{!!url('public/images/slides/thumbs/banner8.jpg')!!}">
             <div class="camera_caption fadeFromBottom">
                 Mua giày giá rẻ <em> Dành cho sản phẩm giày tại Shop giày sinh viên </em>
             </div>

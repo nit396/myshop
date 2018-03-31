@@ -42,7 +42,7 @@
           <div class="clearfix">            
           </div>
 
-        <!--========================== phan danh muc laptop   =========================================  -->
+        <!--========================== phan danh muc giày nữ   =========================================  -->
           <div id="giaynu"></div>
           @foreach($giaynu as $row)
           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 no-padding" >
@@ -92,7 +92,7 @@
           
         </div>
           <a href="http://api.hostinger.vn/redir/1309904" target="_blank"> 
-            <img src="public/images/slides/thumbs/qc1.png" alt="Hosting Miễn Phí" border="0" width="100%" height="250" />
+            <img src="public/images/slides/thumbs/banner9.jpg" alt="Hosting Miễn Phí" border="0" width="100%" height="250" />
           </a>
         </div> <!-- /col 12 -->     
 @endsection
