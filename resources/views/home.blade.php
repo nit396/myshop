@@ -92,7 +92,7 @@
           
         </div>
           <a href="http://api.hostinger.vn/redir/1309904" target="_blank"> 
-            <img src="public/images/slides/thumbs/banner9.jpg" alt="Hosting Miễn Phí" border="0" width="100%" height="250" />
+            <img src="public/images/slides/thumbs/qc1.png" alt="Hosting Miễn Phí" border="0" width="100%" height="250" />
           </a>
         </div> <!-- /col 12 -->     
 @endsection

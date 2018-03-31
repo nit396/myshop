@@ -171,16 +171,11 @@
         <h3 class="panel-title text-center">Sự kiện HOT</h3>
       </div>
       <div class="panel-body no-padding">
-        <a href="#" title=""><img src="{!!url('public/images/slides/thumbs/banner1.jpg')!!}" alt="" width="100%" height="100%"> </a> <br>
-        <a href="#" title=""><img src="{!!url('public/images/slides/thumbs/banner2.jpg')!!}" alt="" width="100%" height="100%"> </a> <br>
-        <a href="#" title=""><img src="{!!url('public/images/slides/thumbs/banner3.jpg')!!}" alt="" width="100%" height="100%"> </a>
-        <a href="#" title=""><img src="{!!url('public/images/slides/thumbs/banner4.jpg')!!}" alt="" width="100%" height="100%"> </a>
-        <a href="#" title=""><img src="{!!url('public/images/slides/thumbs/banner5.jpg')!!}" alt="" width="100%" height="100%"> </a>
-        <a href="#" title=""><img src="{!!url('public/images/slides/thumbs/banner6.jpg')!!}" alt="" width="100%" height="100%"> </a>
-        <a href="#" title=""><img src="{!!url('public/images/slides/thumbs/banner7.jpg')!!}" alt="" width="100%" height="100%"> </a>
-        <a href="#" title=""><img src="{!!url('public/images/slides/thumbs/banner8.jpg')!!}" alt="" width="100%" height="100%"> </a>
-        <a href="#" title=""><img src="{!!url('public/images/slides/thumbs/banner9.jpg')!!}" alt="" width="100%" height="100%"> </a>
-        <a href="#" title=""><img src="{!!url('public/images/slides/thumbs/banner10.jpg')!!}" alt="" width="100%" height="100%"> </a>
+        <a href="#" title=""><img src="{!!url('public/images/slides/thumbs/qc1.png')!!}" alt="" width="100%" height="100%"> </a> <br>
+        <a href="#" title=""><img src="{!!url('public/images/slides/thumbs/qc2.png')!!}" alt="" width="100%" height="100%"> </a> <br>
+        <a href="#" title=""><img src="{!!url('public/images/slides/thumbs/qc3.png')!!}" alt="" width="100%" height="100%"> </a>
+        <a href="#" title=""><img src="{!!url('public/images/slides/thumbs/qc4.png')!!}" alt="" width="100%" height="100%"> </a>
+        <a href="#" title=""><img src="{!!url('public/images/slides/thumbs/qc5.png')!!}" alt="" width="100%" height="100%"> </a>
       </div>
     </div> <!-- /panel info 2  quản cáo 1          -->        
  
