@@ -2,7 +2,7 @@
     <nav class="navbar navbar-default navbar-top" role="navigation" id="main-Nav" style="background-color: #16a085;margin-bottom: 5px;font-size: 13px;">
       <div class="container">  
         <div class="row">
-          <!-- Brand and toggle get grouped for better mobile display -->
+          <!-- Brand and toggle get grouped for better giaynam display -->
           <div class="navbar-header">
              <span  class="visible-xs pull-left" style="font-size:30px;cursor:pointer; padding-left: 10px; color: #ecf0f1;" onclick="openNav()">&#9776; </span> 
              <span  class="visible-xs pull-right" style="font-size:20px;cursor:pointer; padding-right: 10px; padding-top: 8px; color: #FFFFFF;" >      
