@@ -107,7 +107,7 @@
               </div>
               <hr>
               <div class="row">
-                <!-- <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+                <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
                   <div class="table-responsive">
                     <table class="table table-hover">
                       <thead>
@@ -117,41 +117,25 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td>CPU</td>
-                          <td>{!!$data->pro_details->cpu!!}</td>
+                          <td>Size</td>
+                          <td>{!!$data->pro_details->size!!}</td>
                         </tr>
                         <tr>
-                          <td>RAM</td>
-                          <td> {!!$data->pro_details->ram!!}</td>
+                          <td>Color</td>
+                          <td> {!!$data->pro_details->mau!!}</td>
                         </tr>
                         <tr>
-                          <td>Lưu trữ</td>
-                          <td>{!!$data->pro_details->storage!!}</td>
+                          <td>Rate</td>
+                          <td>{!!$data->pro_details->rate!!}</td>
                         </tr>
                         <tr>
-                          <td>Màn hình</td>
-                          <td>{!!$data->pro_details->screen!!}</td>
-                        </tr>
-                        <tr>
-                          <td>VGA</td>
-                          <td>  {!!$data->pro_details->vga!!} </td>
-                        </tr>
-                        <tr>
-                          <td>Kết nối</td>
-                          <td>{!!$data->pro_details->connect!!}</td>
-                        </tr>
-                        <tr>
-                          <td>Webcam</td>
-                          <td>{!!$data->pro_details->cam1!!}</td>
-                        </tr>
-                        <tr>
-                          <td>Dung lượng PIN</td>
-                          <td>{!!$data->pro_details->pin!!} </td>
+                          <td>Số lượng</td>
+                          <td>{!!$data->pro_details->soluong!!}</td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
-                </div> -->
+                </div>
                 <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
                   <div class="table-responsive">
                     <div class="panel panel-default">        

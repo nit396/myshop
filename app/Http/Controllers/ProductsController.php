@@ -70,44 +70,15 @@ class ProductsController extends Controller
     	$pro->save();    	
     	$pro_id =$pro->id;
 
-    	// $detail = new Pro_details();
+    	$detail = new Pro_details();
 
-    	// $detail->cpu = $rq->txtCpu;
-    	// $detail->ram = $rq->txtRam;
-    	// $detail->screen = $rq->txtScreen;
-    	// $detail->vga = $rq->txtVga;
-    	// $detail->storage = $rq->txtStorage;
-    	// $detail->exten_memmory =$rq->txtExtend;
-    	// $detail->cam1 = $rq->txtCam1;
-    	// $detail->cam2 = $rq->txtCam2;
-    	// $detail->sim = $rq->txtSIM;
-    	// $detail->connect = $rq->txtConnect;
-    	// $detail->pin = $rq->txtPin;
-    	// $detail->os = $rq->txtOs;
-        // $detail->note = $rq->txtNote;
-    	// $detail->pro_id = $pro_id;
-
-        // if ($rq->txtCam1=='') {
-        //     $detail->cam1='không có';
-        // }
-        // if ($rq->txtCam2=='') {
-        //     $detail->cam2='không có';
-        // }
-        // if ($rq->exten_memmory =='') {
-        //     $detail->exten_memmory= $rq->txtCase;
-        // }
-        // if ($rq->pin =='') {
-        //     $detail->pin= 'Không có';
-        // }
-        //  if ($rq->sim =='') {
-        //     $detail->sim= 'Không có';
-        // }
-        //  if ($rq->note =='') {
-        //     $detail->note= 'Không có';
-        // }
-
-    	// $detail->created_at = new datetime;
-    	// $detail->save();    	
+    	$detail->size = $rq->txtSize;
+    	$detail->mau = $rq->txtMau;
+    	$detail->rate = $rq->txtRate;
+    	$detail->soluong = $rq->txtSoluong;
+    	$detail->pro_id = $pro_id;
+    	$detail->created_at = new datetime;
+    	$detail->save();    	
 
     	if ($rq->hasFile('txtdetail_img')) {
     		$df = $rq->file('txtdetail_img');
@@ -199,28 +170,11 @@ class ProductsController extends Controller
         }       
         $pro->save(); 
         
-        // $pro->pro_details->cpu = $rq->txtCpu;
-        // $pro->pro_details->ram = $rq->txtRam;
-        // $pro->pro_details->screen = $rq->txtScreen;
-        // $pro->pro_details->vga = $rq->txtVga;
-        // $pro->pro_details->storage = $rq->txtStorage;
-        // $pro->pro_details->exten_memmory =$rq->txtExtend;
-        // $pro->pro_details->connect = $rq->txtConnect;
-        // $pro->pro_details->cam1 = $rq->txtCam1;
-        // $pro->pro_details->cam2 = $rq->txtCam2;
+        $pro->pro_details->size = $rq->txtSize;
+        $pro->pro_details->mau = $rq->txtMau;
+        $pro->pro_details->rate = $rq->txtRate;
+        $pro->pro_details->soluong = $rq->txtSoluong;
 
-        if ($rq->txtSIM =='') {
-            $pro->pro_details->sim= 'Không có';
-        } else {
-            $pro->pro_details->sim = $rq->txtSIM;
-        }
-       
-        if ($rq->txtPin =='') {
-            $pro->pro_details->pin= 'Không có';
-        } else {
-            $pro->pro_details->pin = $rq->txtPin;
-        }
-        $pro->pro_details->os = $rq->txtOs;
         $pro->pro_details->updated_at = new datetime;        
 
         if ($rq->hasFile('txtdetail_img')) {

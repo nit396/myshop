@@ -22,13 +22,13 @@ class PagesController extends Controller
                 ->join('category', 'products.cat_id', '=', 'category.id')
                 ->join('pro_details', 'pro_details.pro_id', '=', 'products.id')
                 ->where('category.parent_id','=','1')
-                ->select('products.*','pro_details.cpu','pro_details.ram','pro_details.screen','pro_details.vga','pro_details.storage','pro_details.exten_memmory','pro_details.cam1','pro_details.cam2','pro_details.sim','pro_details.connect','pro_details.pin','pro_details.os','pro_details.note')
+                ->select('products.*','pro_details.size','pro_details.mau','pro_details.rate','pro_details.soluong')
                 ->paginate(9);
         $giaynu = DB::table('products')
                 ->join('category', 'products.cat_id', '=', 'category.id')
                 ->join('pro_details', 'pro_details.pro_id', '=', 'products.id')
                 ->where('category.parent_id','=','2')
-                ->select('products.*','pro_details.cpu','pro_details.ram','pro_details.screen','pro_details.vga','pro_details.storage','pro_details.exten_memmory','pro_details.cam1','pro_details.cam2','pro_details.sim','pro_details.connect','pro_details.pin','pro_details.os','pro_details.note')
+                ->select('products.*','pro_details.size','pro_details.mau','pro_details.rate','pro_details.soluong')
                 ->paginate(6);
 
     	return view('home',['giaynam'=>$giaynam,'giaynu'=>$giaynu]);
@@ -117,7 +117,7 @@ class PagesController extends Controller
                 ->join('category', 'products.cat_id', '=', 'category.id')
                 ->join('pro_details', 'pro_details.pro_id', '=', 'products.id')
                 ->where('category.parent_id','=','1')
-                ->select('products.*','pro_details.cpu','pro_details.ram','pro_details.screen','pro_details.vga','pro_details.storage','pro_details.exten_memmory','pro_details.cam1','pro_details.cam2','pro_details.sim','pro_details.connect','pro_details.pin','pro_details.os','pro_details.note')
+                ->select('products.*','pro_details.size','pro_details.mau','pro_details.rate','pro_details.soluong')
                 ->paginate(12);
     		return view('category.giaynam',['data'=>$giaynam]);
     	} 
@@ -126,7 +126,7 @@ class PagesController extends Controller
                 ->join('category', 'products.cat_id', '=', 'category.id')
                 ->join('pro_details', 'pro_details.pro_id', '=', 'products.id')
                 ->where('category.parent_id','=','2')
-                ->select('products.*','pro_details.cpu','pro_details.ram','pro_details.screen','pro_details.vga','pro_details.storage','pro_details.exten_memmory','pro_details.cam1','pro_details.cam2','pro_details.sim','pro_details.connect','pro_details.pin','pro_details.os','pro_details.note')
+                ->select('products.*','pro_details.size','pro_details.mau','pro_details.rate','pro_details.soluong')
                 ->paginate(12);
             return view('category.giaynu',['data'=>$giaynu]);
         }

@@ -133,28 +133,20 @@
                           <td>{!!$data->pro_details->cam2!!}</td>
                         </tr>
                         <tr>
-                          <td>CPU</td>
-                          <td>{!!$data->pro_details->cpu!!}</td>
+                          <td>Size</td>
+                          <td>{!!$data->pro_details->size!!}</td>
                         </tr>
                         <tr>
-                          <td>RAM</td>
-                          <td>{!!$data->pro_details->ram!!}</td>
+                          <td>Color</td>
+                          <td>{!!$data->pro_details->mau!!}</td>
                         </tr>
                         <tr>
-                          <td>Bộ nhớ trong</td>
-                          <td>{!!$data->pro_details->storage!!}</td>
+                          <td>Rate</td>
+                          <td>{!!$data->pro_details->rate!!}</td>
                         </tr>
                         <tr>
-                          <td>Hỗ trợ thẻ nhớ</td>
-                          <td>{!!$data->pro_details->exten_memmory!!}</td>
-                        </tr>
-                        <tr>
-                          <td>Thẻ SIM</td>
-                          <td>{!!$data->pro_details->sim!!}</td>
-                        </tr>
-                        <tr>
-                          <td>Dung lượng PIN</td>
-                          <td>{!!$data->pro_details->pin!!}</td>
+                          <td>Số lượng</td>
+                          <td>{!!$data->pro_details->soluong!!}</td>
                         </tr>
                       </tbody>
                     </table>
@@ -253,7 +245,7 @@
                 ->join('category', 'products.cat_id', '=', 'category.id')
                 ->join('pro_details', 'pro_details.pro_id', '=', 'products.id')
                 ->where('category.parent_id','=','1')
-                ->select('products.*','pro_details.cpu','pro_details.ram','pro_details.screen','pro_details.vga','pro_details.storage','pro_details.exten_memmory','pro_details.cam1','pro_details.cam2','pro_details.sim','pro_details.connect','pro_details.pin','pro_details.os','pro_details.note')
+                ->select('products.*','pro_details.size','pro_details.mau','pro_details.rate','pro_details.soluong')
                 ->orderBy('products.created_at', 'desc')
                 ->paginate(2); 
 
@@ -290,12 +282,12 @@
                     <li><span class="glyphicon glyphicon-ok-sign"></span>{!!$row->promo3!!}</li>
                   @endif 
                     <li><span class="glyphicon glyphicon-ok-sign"></span></li> 
-                  <!-- <span class="label label-warning">Cấu Hình Nổi bật</span> 
-                  <li><strong>CPU</strong> : <i>  {!!$row->cpu!!}</i></li>
+                  <span class="label label-warning">Thông tin sản phẩm</span> 
+                  <li><strong>size</strong> : <i>  {!!$row->size!!}</i></li>
                   <li><strong>Màn Hình</strong> : <i>{!!$row->screen!!} </i></li> 
                   <li><strong>Camera</strong> : Trước  <i>{!!$row->cam1!!}</i> Sau <i>{!!$row->cam2!!}</i></li> 
                   <li><strong>HĐH</strong> :<i> {!!$row->os!!} </i> <strong> Bộ nhớ trong</strong> :<i> {!!$row->storage!!} </i></li> 
-                  <li><strong>Pin</strong> :<i> {!!$row->pin!!}</i></li> -->
+                  <li><strong>Pin</strong> :<i> {!!$row->pin!!}</i></li>
                 </a>
               </div>
                 <span class="btn label-warning"><strong>{!!number_format($row->price)!!}</strong>Vnd </span>

@@ -12,26 +12,25 @@
                 <div class="intro pull-right">
                   <h1><small class="title-mobile">{!!$row->name!!}</small></h1>
                   <li>{!!$row->intro!!}</li>
-                  <!-- <span class="label label-info">Khuyễn mãi</span>   
+                  <span class="label label-info">Khuyễn mãi</span>   
                   <li><span class="glyphicon glyphicon-hand-right"></span> {!!$row->promo1!!}</li> 
                   <li><span class="glyphicon glyphicon-hand-right"></span> {!!$row->promo2!!}</li> 
-                  <li><span class="glyphicon glyphicon-hand-right"></span> {!!$row->promo3!!}</li>  -->
+                  <li><span class="glyphicon glyphicon-hand-right"></span> {!!$row->promo3!!}</li> 
                 </div><!-- /div introl -->
               </div> <!-- /div bt -->
-              <!-- <div class="ct">
+              <div class="ct">
                 <a href="{!!url('giaynam/'.$row->id.'-'.$row->slug)!!}" title="Xem chi tiết">
                   <span class="label label-info">Ưu đãi khi mua</span>   
                   <li><span class="glyphicon glyphicon-hand-right"></span> {!!$row->promo1!!}</li> 
                   <li><span class="glyphicon glyphicon-hand-right"></span> {!!$row->promo2!!}</li> 
                   <li><span class="glyphicon glyphicon-hand-right"></span> {!!$row->promo3!!}</li>
-                  <span class="label label-warning">Cấu Hình Nổi bật</span> 
-                  <li><strong>CPU</strong> : <i> {!!$row->cpu!!}</i></li>
-                  <li><strong>Màn Hình</strong> : <i>{!!$row->screen!!} </i></li> 
-                  <li><strong>Camera</strong> : Trước  <i>{!!$row->cam1!!}</i> Sau <i>{!!$row->cam2!!} </i></li> 
-                  <li><strong>HĐH</strong> :<i> {!!$row->os!!} </i> <strong> Bộ nhớ trong</strong> :<i> {!!$row->storage!!} </i></li> 
-                  <li><strong>Pin</strong> :<i> {!!$row->pin!!}</i></li>
+                  <span class="label label-warning">Thông tin sản phẩm</span> 
+                  <li><strong>Size</strong> : <i> {!!$row->size!!}</i></li>
+                  <li><strong>Color</strong> : <i>{!!$row->mau!!} </i></li> 
+                  <li><strong>Rate</strong> :<i>{!!$row->rate!!} </i></li> 
+                  <li><strong>Số lượng</strong> :<i> {!!$row->soluong!!} </i></li> 
                 </a>
-              </div> -->
+              </div>
                 <span class="btn label-warning"><strong>{!!$row->price!!}</strong> Đ </span>
                 <a href="{!!url('gio-hang/addcart/'.$row->id)!!}" class="btn btn-success pull-right add">Thêm vào giỏ </a>
             </div> <!-- / div thumbnail -->
@@ -64,28 +63,25 @@
                   </p>
                 </div>
                
-              <!-- <div class="tomtat"> -->
-                <!-- <div class="thongtin">
+              <div class="tomtat">
+                <div class="thongtin">
                   <a href="{!!url('laptop/'.$row->id.'-'.$row->slug)!!}" title="Xem chi tiết">
                     <span class="label label-info ">Ưu đãi khi mua</span>   
                     <li><span class="glyphicon glyphicon-hand-right"></span> {!!$row->promo1!!}</li> 
                     <li><span class="glyphicon glyphicon-hand-right"></span> T{!!$row->promo2!!}</li> 
                     <li><span class="glyphicon glyphicon-hand-right"></span> {!!$row->promo3!!}</li>
-                    <span class="label label-warning">Cấu Hình Nổi bật</span> 
-                    <li><strong>CPU</strong> : <i>{!!$row->cpu!!}</i></li>
-                    <li><strong>RAM </strong> : <i>{!!$row->ram!!}</i></li>
-                    <li><strong>Lưu Trữ</strong> : <i> {!!$row->storage!!}</i></li>
-                    <li><strong>Màn Hình</strong> : <i> {!!$row->screen!!} </i></li> 
-                    <li><strong>VGA</strong> : <i> {!!$row->vga!!}</i></li> 
-                    <li><strong>HĐH</strong> :<i> {!!$row->os!!}</i></li> 
-                    <li><strong>Pin</strong> :<i> {!!$row->pin!!}</i></li>
+                    <span class="label label-warning">Thông tin sản phẩm</span> 
+                    <li><strong>Size</strong> : <i>{!!$row->size!!}</i></li>
+                    <li><strong>Color </strong> : <i>{!!$row->mau!!}</i></li>
+                    <li><strong>Rate</strong> : <i> {!!$row->rate!!}</i></li>
+                    <li><strong>Số lượng</strong> : <i> {!!$row->soluong!!} </i></li> 
                   </a>
-                </div>                 -->
-                <!-- <div class="price">  
+                </div>                
+                <div class="price">  
                     <span class="btn btn-info btn-block ">Giá : <strong>{!!$row->price!!}</strong> Đ</span>   
                     <a href="{!!url('gio-hang/addcart/'.$row->id)!!}" class="btn btn-success btn-block">Thêm vào giỏ</a> 
-                  </div>   -->
-              <!-- </div>             -->
+                  </div>  
+              </div>            
               </div> 
             </div>
           </div>

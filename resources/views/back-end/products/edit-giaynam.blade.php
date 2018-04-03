@@ -89,46 +89,18 @@
 				      			<label for="input-id"> Chi tiết cấu hình sản phẩm</label>
 				      			<div class="row">
 					      			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-					      				Cpu : <input type="text" name="txtCpu" id="inputtxtCpu" value="{!! old('txtCpu',isset($pro->pro_details->cpu) ? $pro->pro_details->cpu : null) !!}" class="form-control" >
+					      				Size : <input type="text" name="txtSize" id="inputtxtSize" value="{!! old('txtSize',isset($pro->pro_details->size) ? $pro->pro_details->size : null) !!}" class="form-control" >
 					      			</div>
 					      			<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-					      				RAM : <input type="text" name="txtRam" id="inputtxtRam" value="{!! old('txtRam',isset($pro->pro_details->ram) ? $pro->pro_details->ram : null) !!}" class="form-control" >
+					      				Color : <input type="text" name="txtMau" id="inputtxtMau" value="{!! old('txtMau',isset($pro->pro_details->mau) ? $pro->pro_details->mau : null) !!}" class="form-control" >
 					      			</div>
 					      			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
-					      				Bộ nhớ trong : <input type="text" name="txtStorage" id="inputtxtStorage" value="{!! old('txtStorage',isset($pro->pro_details->storage) ? $pro->pro_details->storage : null) !!}" class="form-control" >
+					      				Rate : <input type="text" name="txtRate" id="inputtxtRate" value="{!! old('txtRate',isset($pro->pro_details->rate) ? $pro->pro_details->rate : null) !!}" class="form-control" >
 					      			</div>
 					      			<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" style="padding-left: 0;">
-					      				Thẻ nhớ <input type="text" name="txtExtend" id="inputtxtExtend" value="{!! old('txtExtend',isset($pro->pro_details->exten_memmory) ? $pro->pro_details->exten_memmory : null) !!}" class="form-control">
+					      				Số lượng <input type="text" name="txtSoluong" id="inputtxtSoluong" value="{!! old('txtSoluong',isset($pro->pro_details->soluong) ? $pro->pro_details->soluong : null) !!}" class="form-control">
 					      			</div>
 					      		</div>
-					      		<div class="row">
-					      			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-					      				Màn hình : <input type="text" name="txtScreen" id="inputtxtscreen" value="{!! old('txtScreen',isset($pro->pro_details->screen) ? $pro->pro_details->screen : null) !!}" class="form-control" >
-					      			</div>
-					      			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-					      				VGA : <input type="text" name="txtVga" id="inputtxtVga" value="{!! old('txtVga',isset($pro->pro_details->vga) ? $pro->pro_details->vga : null) !!}" class="form-control">
-					      			</div>
-					      			<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-					      				Cammera Trước : <input type="text" name="txtCam1" id="inputtxtCam1" value="{!! old('txtCam1',isset($pro->pro_details->cam1) ? $pro->pro_details->cam1 : null) !!}" class="form-control" >
-					      			</div>
-					      			<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-					      				Cammera Sau: <input type="text" name="txtCam2" id="inputtxtCam2" value="{!! old('txtCam2',isset($pro->pro_details->cam2) ? $pro->pro_details->cam2 : null) !!}" class="form-control" >
-					      			</div>
-					      		</div>
-					      		<div class="row">
-					      			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-					      				SIM hỗ trợ : <input type="text" name="txtSIM" id="inputtxtSIM" value="{!! old('txtSIM',isset($pro->pro_details->sim) ? $pro->pro_details->sim : null) !!}" class="form-control" >
-					      			</div>
-					      			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-					      				Kết nối : <input type="text" name="txtConnect" id="inputtxtConnect" value="{!! old('txtConnect',isset($pro->pro_details->connect) ? $pro->pro_details->connect : null) !!}" class="form-control">
-					      			</div>
-					      			<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-					      				PIN : <input type="text" name="txtPin" id="inputtxtPin" value="{!! old('txtPin',isset($pro->pro_details->pin) ? $pro->pro_details->pin : null) !!}" class="form-control" >
-					      			</div>
-					      			<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-					      				Hệ điều hành : <input type="text" name="txtOs" id="inputtxtOs" value="{!! old('txtOs',isset($pro->pro_details->os) ? $pro->pro_details->os : null) !!}" class="form-control" >
-					      			</div>
-					      		</div>				      			
 				      		</div>
 				      	@else
 				      	<div class="form-group">
@@ -138,40 +110,21 @@
 					      				Mainboard : <input type="text" name="txtScreen" id="inputtxtscreen" value="{!! old('txtScreen',isset($pro->pro_details->screen) ? $pro->pro_details->screen : null) !!}"  class="form-control" >
 					      			</div>
 					      			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-					      				Cpu : <input type="text" name="txtCpu" id="inputtxtCpu" value="{!! old('txtCpu',isset($pro->pro_details->cpu) ? $pro->pro_details->cpu : null) !!}" class="form-control" >
+					      				Size : <input type="text" name="txtSize" id="inputtxtSize" value="{!! old('txtSize',isset($pro->pro_details->size) ? $pro->pro_details->size : null) !!}" class="form-control" >
 					      			</div>					      			
 					      								      			
 					      		</div>
 					      		<div class="row">
 					      			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-					      				RAM : <input type="text" name="txtRam" id="inputtxtRam" value="{!! old('txtRam',isset($pro->pro_details->ram) ? $pro->pro_details->ram : null) !!}" class="form-control" >
+					      				Color : <input type="text" name="txtMau" id="inputtxtMau" value="{!! old('txtMau',isset($pro->pro_details->mau) ? $pro->pro_details->mau : null) !!}" class="form-control" >
 					      			</div>
 					      			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-					      				VGA : <input type="text" name="txtVga" id="inputtxtVga" value="{!! old('txtVga',isset($pro->pro_details->vga) ? $pro->pro_details->vga : null) !!}" class="form-control">
-					      			</div>
-					      		</div>
-					      		<div class="row">					      			
-					      			<div class="col-xs-12 col-sm-3 col-md-4 col-lg-4">
-					      				Lưu trữ(HDD) : <input type="text" name="txtStorage" id="inputtxtStorage" value="{!! old('txtStorage',isset($pro->pro_details->storage) ? $pro->pro_details->storage : null) !!}" class="form-control" >
-					      			</div>
-					      			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-					      				FAN - Tản nhiệt <input type="text" name="txtCam1" id="inputtxtCam1" value="{!! old('txtCam1',isset($pro->pro_details->cam1) ? $pro->pro_details->cam1 : null) !!}" class="form-control" >
-					      			</div>
-					      			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-					      				Nguồn (PSU) <input type="text" name="txtCam2" id="inputtxtCam2" value="{!! old('txtCam2',isset($pro->pro_details->cam2) ? $pro->pro_details->cam2 : null) !!}"" class="form-control" >
-					      			</div>
-					      		</div>
-					      		<div class="row">
-					      			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-					      				Kết nối : <input type="text" name="txtConnect" id="inputtxtConnect" value="{!! old('txtConnect',isset($pro->pro_details->connect) ? $pro->pro_details->connect : null) !!}" class="form-control">
-					      			</div>
-					      			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" style="padding-left: 0;">
-					      				Thùng CASE <input type="text" name="txtExtend" id="inputtxtExtend" value="{!! old('txtExtend',isset($pro->pro_details->exten_memmory) ? $pro->pro_details->exten_memmory : null) !!}" class="form-control">
-					      			</div>
-					      			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-					      				Hệ điều hành : <input type="text" name="txtOs" id="inputtxtOs" value="{!! old('txtOs',isset($pro->pro_details->os) ? $pro->pro_details->os : null) !!}" class="form-control" >
-					      			</div>
-					      		</div>				      			
+					      				Rate : <input type="text" name="txtRate" id="inputtxtRate" value="{!! old('txtRate',isset($pro->pro_details->rate) ? $pro->pro_details->rate : null) !!}" class="form-control">
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					      				Số lượng : <input type="text" name="txtSoluong" id="inputtxtSoluong" value="{!! old('txtSoluong',isset($pro->pro_details->soluong) ? $pro->pro_details->soluong : null) !!}" class="form-control">
+									</div> 
+					      		</div>	      			
 				      		</div>
 				      	@endif
 				      		<div class="form-group">
