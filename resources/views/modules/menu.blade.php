@@ -1,5 +1,5 @@
  <!-- main menu  navbar -->
-    <nav class="navbar navbar-default navbar-top" role="navigation" id="main-Nav" style="background-color: #16a085;margin-bottom: 5px;font-size: 13px;">
+    <nav class="navbar navbar-default navbar-top" role="navigation" id="main-Nav" style="background-color: red;margin-bottom: 5px;font-size: 13px;">
       <div class="container">  
         <div class="row">
           <!-- Brand and toggle get grouped for better giaynam display -->
