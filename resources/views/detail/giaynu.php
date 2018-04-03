@@ -26,7 +26,7 @@
                           <div id="links">
                             @foreach($data->detail_img as $row)
                               <a href="{!!url('uploads/products/details/'.$row->images_url)!!}" title="{!!$data->name!!}" data-gallery>
-                                  <img src="{!!url('public/uploads/products/details/'.$row->images_url)!!}" alt="ả{!!$data->name!!}" width="30" height="40">
+                                  <img src="{!!url('public/uploads/products/details/'.$row->images_url)!!}" alt="{!!$data->name!!}" width="30" height="40">
                               </a>
                             @endforeach                              
                           </div>

@@ -50,7 +50,7 @@
                        <tbody>                       
                       @foreach(Cart::content() as $row)
                          <tr>
-                           <td> {!!$row->images!!} <img class="card-img img-circle" src="{!!url('uploads/products/'.$row->options->img)!!}" alt="dell"></td>
+                           <td> {!!$row->images!!} <img class="card-img img-circle" src="{!!url('uploads/products/'.$row->options->img)!!}" alt=""></td>
                            <td>{!!$row->qty!!}</td>
                            <td>{!!$row->name!!}</td>                           
                            <td>{!!$row->price!!} Vnd</td>

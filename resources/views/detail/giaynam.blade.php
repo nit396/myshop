@@ -276,7 +276,7 @@
                   @elseif ($row->promo3!='')
                     <li><span class="glyphicon glyphicon-ok-sign"></span>{!!$row->promo3!!}</li>
                   @endif 
-                    <li><span class="glyphicon glyphicon-ok-sign"></span>Cài đặt phần miềm, tải nhạc - ứng dụng miến phí</li> 
+                    <li><span class="glyphicon glyphicon-ok-sign"></span></li> 
                 </div><!-- /div introl -->
               </div> <!-- /div bt -->
               <div class="ct">
@@ -289,13 +289,13 @@
                   @elseif ($row->promo3!='')
                     <li><span class="glyphicon glyphicon-ok-sign"></span>{!!$row->promo3!!}</li>
                   @endif 
-                    <li><span class="glyphicon glyphicon-ok-sign"></span>Cài đặt phần miềm, tải nhạc - ứng dụng miến phí</li> 
-                  <span class="label label-warning">Cấu Hình Nổi bật</span> 
+                    <li><span class="glyphicon glyphicon-ok-sign"></span></li> 
+                  <!-- <span class="label label-warning">Cấu Hình Nổi bật</span> 
                   <li><strong>CPU</strong> : <i>  {!!$row->cpu!!}</i></li>
                   <li><strong>Màn Hình</strong> : <i>{!!$row->screen!!} </i></li> 
                   <li><strong>Camera</strong> : Trước  <i>{!!$row->cam1!!}</i> Sau <i>{!!$row->cam2!!}</i></li> 
                   <li><strong>HĐH</strong> :<i> {!!$row->os!!} </i> <strong> Bộ nhớ trong</strong> :<i> {!!$row->storage!!} </i></li> 
-                  <li><strong>Pin</strong> :<i> {!!$row->pin!!}</i></li>
+                  <li><strong>Pin</strong> :<i> {!!$row->pin!!}</i></li> -->
                 </a>
               </div>
                 <span class="btn label-warning"><strong>{!!number_format($row->price)!!}</strong>Vnd </span>

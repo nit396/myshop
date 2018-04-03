@@ -199,15 +199,15 @@ class ProductsController extends Controller
         }       
         $pro->save(); 
         
-        $pro->pro_details->cpu = $rq->txtCpu;
-        $pro->pro_details->ram = $rq->txtRam;
-        $pro->pro_details->screen = $rq->txtScreen;
-        $pro->pro_details->vga = $rq->txtVga;
-        $pro->pro_details->storage = $rq->txtStorage;
-        $pro->pro_details->exten_memmory =$rq->txtExtend;
-        $pro->pro_details->connect = $rq->txtConnect;
-        $pro->pro_details->cam1 = $rq->txtCam1;
-        $pro->pro_details->cam2 = $rq->txtCam2;
+        // $pro->pro_details->cpu = $rq->txtCpu;
+        // $pro->pro_details->ram = $rq->txtRam;
+        // $pro->pro_details->screen = $rq->txtScreen;
+        // $pro->pro_details->vga = $rq->txtVga;
+        // $pro->pro_details->storage = $rq->txtStorage;
+        // $pro->pro_details->exten_memmory =$rq->txtExtend;
+        // $pro->pro_details->connect = $rq->txtConnect;
+        // $pro->pro_details->cam1 = $rq->txtCam1;
+        // $pro->pro_details->cam2 = $rq->txtCam2;
 
         if ($rq->txtSIM =='') {
             $pro->pro_details->sim= 'Không có';

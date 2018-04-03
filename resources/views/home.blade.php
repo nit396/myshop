@@ -53,17 +53,18 @@
                   <h1><small><strong class="title-pro">{!!$row->name!!}</strong></small></h1>
                   <p>    
                       <li><i>{!!$row->intro!!}</i></li>             
-                      <!-- <span class="label label-info ">Ưu đãi khi mua</span>
+                      <span class="label label-info ">Ưu đãi khi mua</span>
                       <li><span class="glyphicon glyphicon-hand-right"></span> {!!$row->promo1!!}</li> 
                       <li> <span class="glyphicon glyphicon-hand-right"></span> {!!$row->promo2!!}</li>
-                      <li> <span class="glyphicon glyphicon-hand-right"></span> {!!$row->promo3!!}</li> -->
+                      <li> <span class="glyphicon glyphicon-hand-right"></span> {!!$row->promo3!!}</li>
                   </p>
                   <p>
                     <span class="btn label-warning">Giá : <strong>{!!$row->price!!}</strong> Đ </span>
+                    <span href="{!!url('gio-hang/addcart/'.$row->id)!!}" class="btn btn-success btn-block">Thêm vào giỏ</span>                     
                   </p>
                 </div>
-              </div>
-              <div class="tomtat">
+               
+              <!-- <div class="tomtat"> -->
                 <!-- <div class="thongtin">
                   <a href="{!!url('laptop/'.$row->id.'-'.$row->slug)!!}" title="Xem chi tiết">
                     <span class="label label-info ">Ưu đãi khi mua</span>   
@@ -80,10 +81,11 @@
                     <li><strong>Pin</strong> :<i> {!!$row->pin!!}</i></li>
                   </a>
                 </div>                 -->
-                  <div class="price">  
+                <!-- <div class="price">  
                     <span class="btn btn-info btn-block ">Giá : <strong>{!!$row->price!!}</strong> Đ</span>   
                     <a href="{!!url('gio-hang/addcart/'.$row->id)!!}" class="btn btn-success btn-block">Thêm vào giỏ</a> 
-                  </div>                  
+                  </div>   -->
+              <!-- </div>             -->
               </div> 
             </div>
           </div>

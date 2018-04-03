@@ -83,7 +83,7 @@
 					      			</div>
 					      		</div>				      			
 				      		</div>
-				      		<div class="form-group">
+				      		<!-- <div class="form-group">
 				      			<label for="input-id"> Chi tiết cấu hình sản phẩm</label>
 				      			<div class="row">
 					      			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -127,7 +127,7 @@
 					      				Hệ điều hành : <input type="text" name="txtOs" id="inputtxtOs" value="{{ old('txtOs') }}" class="form-control" >
 					      			</div>
 					      		</div>				      			
-				      		</div>
+				      		</div> -->
 				      		<div class="form-group">
 				      			<label for="input-id">Đánh giá chi tiết sản phẩm</label>
 				      			<div class="row">

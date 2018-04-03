@@ -22,16 +22,17 @@
                       @elseif ($row->promo3!='')
                         <li><span class="glyphicon glyphicon-ok-sign"></span>{!!$row->promo3!!}</li>
                       @endif 
-                        <li><span class="glyphicon glyphicon-ok-sign"></span>Cài đặt phần miềm, tải nhạc - ứng dụng miến phí</li>                                                            
+                        <li><span class="glyphicon glyphicon-ok-sign"></span></li>                                                            
                   </p>
                   <p>
                     <span class="btn label-warning"><strong>{!!number_format($row->price)!!} Vnd</strong> </span>
+                    <a href="{!!url('gio-hang/addcart/'.$row->id)!!}" class="btn btn-success btn-block">Thêm vào giỏ</a>                                      
                   </p>
                 </div>
               </div>
-              <div class="tomtat">
+              <!-- <div class="tomtat">
                 <div class="thongtin">
-                  <a href="{!!url('laptop/'.$row->id.'-'.$row->slug)!!}" title="">
+                  <a href="{!!url('giaynu/'.$row->id.'-'.$row->slug)!!}" title="">
                   <span class="label label-info ">Ưu đãi khi mua</span>   
                   @if ($row->promo1!='')
                     <li><span class="glyphicon glyphicon-ok-sign"></span>{!!$row->promo1!!}</li>
@@ -55,7 +56,7 @@
                     <span class="btn btn-info btn-block "><strong>{!!number_format($row->price)!!}</strong> Vnd</span>   
                     <a href="{!!url('gio-hang/addcart/'.$row->id)!!}" class="btn btn-success btn-block">Thêm vào giỏ</a>                  
                   </div>                  
-              </div> 
+              </div>  -->
             </div>
           </div>
         @endforeach
