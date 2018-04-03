@@ -19,7 +19,8 @@
                 </div><!-- /div introl -->
               </div> <!-- /div bt -->
               <div class="ct">
-                <a href="{!!url('giaynam/'.$row->id.'-'.$row->slug)!!}" title="Xem chi tiết">
+                <!-- <a href="{!!url('giaynam/'.$row->id.'-'.$row->slug)!!}" title="Xem chi tiết"> -->
+                <a href="{!!url('#')!!}" title="Xem chi tiết">                
                   <span class="label label-info">Ưu đãi khi mua</span>   
                   <li><span class="glyphicon glyphicon-hand-right"></span> {!!$row->promo1!!}</li> 
                   <li><span class="glyphicon glyphicon-hand-right"></span> {!!$row->promo2!!}</li> 
@@ -65,7 +66,8 @@
                
               <div class="tomtat">
                 <div class="thongtin">
-                  <a href="{!!url('laptop/'.$row->id.'-'.$row->slug)!!}" title="Xem chi tiết">
+                  <!-- <a href="{!!url('giaynu/'.$row->id.'-'.$row->slug)!!}" title="Xem chi tiết"> -->
+                  <a href="{!!url('#')!!}" title="Xem chi tiết">                  
                     <span class="label label-info ">Ưu đãi khi mua</span>   
                     <li><span class="glyphicon glyphicon-hand-right"></span> {!!$row->promo1!!}</li> 
                     <li><span class="glyphicon glyphicon-hand-right"></span> T{!!$row->promo2!!}</li> 

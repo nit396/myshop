@@ -14,7 +14,7 @@
               <div class="row">
               <!-- hot new content -->
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
-                  <h3 class="pro-detail-title"><a href="{!!url('/giaynam/'.$data->id.'-'.$data->slug)!!}" title="">{!!$data->name!!}</a></h3>
+                  <h3 class="pro-detail-title"><a href="{!!url('#')!!}" title="">{!!$data->name!!}</a></h3>
                   <hr>
                   <div class="row">
                     <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
@@ -82,18 +82,12 @@
                             @elseif ($data->promo3!='')
                               <li><span class="glyphicon glyphicon-ok-sign"></span>{!!$data->promo3!!}</li>
                             @endif 
-                              <li><span class="glyphicon glyphicon-ok-sign"></span>Cài đặt phần miềm, tải nhạc - ứng dụng miến phí</li>                                                       
+                              <li><span class="glyphicon glyphicon-ok-sign"></span></li>                                                       
                           </div>                         
                         </div>
                       </div>
                       <div class="panel panel-info">
                         <div class="panel-body">
-                         <div class="chinhsach">
-                            <li><span class="glyphicon glyphicon-hand-right"></span> Trong hộp có: {!!$data->packet!!} </li>
-                            <li><span class="glyphicon glyphicon-hand-right"></span> Bảo hành chính hãng: thân máy 12 tháng, pin 12 tháng, sạc 12 tháng</li>
-                            <li><span class="glyphicon glyphicon-hand-right"></span> Giao hàng tận nơi miễn phí trong 1 ngày</li>
-                            <li><span class="glyphicon glyphicon-hand-right"></span> 1 đổi 1 trong 1 tháng với sản phẩm lỗi</li>
-                         </div>
                         </div>
                       </div>
                       @if($data->status ==1)
@@ -112,26 +106,10 @@
                     <table class="table table-hover">
                       <thead>
                         <tr>
-                          <th colspan="2">CẤU HÌNH CHI TIẾT SẢN PHẨM</th>
+                          <th colspan="2">TIẾT SẢN PHẨM</th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr>
-                          <td>Màn hình</td>
-                          <td>{!!$data->pro_details->screen!!}</td>
-                        </tr>
-                        <tr>
-                          <td>Hệ điều hành</td>
-                          <td>{!!$data->pro_details->os!!}</td>
-                        </tr>
-                        <tr>
-                          <td>Cammera trước</td>
-                          <td>{!!$data->pro_details->cam1!!}</td>
-                        </tr>
-                        <tr>
-                          <td>Cammera sau</td>
-                          <td>{!!$data->pro_details->cam2!!}</td>
-                        </tr>
                         <tr>
                           <td>Size</td>
                           <td>{!!$data->pro_details->size!!}</td>
@@ -272,7 +250,7 @@
                 </div><!-- /div introl -->
               </div> <!-- /div bt -->
               <div class="ct">
-                <a href="{!!url('giaynam/'.$row->id.'-'.$row->slug)!!}" title="Chi tiết">
+                <a href="{!!url('#')!!}" title="Chi tiết">
                   <span class="label label-info">Ưu đãi khi mua</span>   
                   @if ($row->promo1!='')
                     <li><span class="glyphicon glyphicon-ok-sign"></span>{!!$row->promo1!!}</li>
@@ -283,11 +261,10 @@
                   @endif 
                     <li><span class="glyphicon glyphicon-ok-sign"></span></li> 
                   <span class="label label-warning">Thông tin sản phẩm</span> 
-                  <li><strong>size</strong> : <i>  {!!$row->size!!}</i></li>
-                  <li><strong>Màn Hình</strong> : <i>{!!$row->screen!!} </i></li> 
-                  <li><strong>Camera</strong> : Trước  <i>{!!$row->cam1!!}</i> Sau <i>{!!$row->cam2!!}</i></li> 
-                  <li><strong>HĐH</strong> :<i> {!!$row->os!!} </i> <strong> Bộ nhớ trong</strong> :<i> {!!$row->storage!!} </i></li> 
-                  <li><strong>Pin</strong> :<i> {!!$row->pin!!}</i></li>
+                  <li><strong>Size</strong> : <i>{!!$row->size!!}</i></li>
+                  <li><strong>Color </strong> : <i>{!!$row->mau!!}</i></li>
+                  <li><strong>Rate</strong> : <i>{!!$row->rate!!}</i></li>
+                  <li><strong>Số lượng</strong> : <i>{!!$row->soluong!!} </i></li> 
                 </a>
               </div>
                 <span class="btn label-warning"><strong>{!!number_format($row->price)!!}</strong>Vnd </span>

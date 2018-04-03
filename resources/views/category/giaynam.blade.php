@@ -13,7 +13,7 @@
                 <div class="intro pull-right">
                   <h1><small class="title-mobile">{!!$row->name!!}</small></h1>
                   <li>{!!$row->intro!!}</li>
-                  <span class="label label-info">Khuyễn mãi</span>   
+                  <span class="label label-info">Khuyến mãi</span>   
                   @if ($row->promo1!='')
                     <li><span class="glyphicon glyphicon-ok-sign"></span>{!!$row->promo1!!}</li>
                   @elseif($row->promo2!='')
@@ -21,7 +21,6 @@
                   @elseif ($row->promo3!='')
                     <li><span class="glyphicon glyphicon-ok-sign"></span>{!!$row->promo3!!}</li>
                   @endif 
-                    <li><span class="glyphicon glyphicon-ok-sign"></span></li> 
                 </div><!-- /div introl -->
               </div> <!-- /div bt -->
               <div class="ct">
@@ -34,7 +33,6 @@
                   @elseif ($row->promo3!='')
                     <li><span class="glyphicon glyphicon-ok-sign"></span>{!!$row->promo3!!}</li>
                   @endif 
-                    <li><span class="glyphicon glyphicon-ok-sign"></span></li> 
                   <span class="label label-warning">Thông tin sản phẩm</span> 
                   <li><strong>Size</strong> : <i>{!!$row->size!!}</i></li>
                   <li><strong>Color </strong> : <i>{!!$row->mau!!}</i></li>

@@ -86,16 +86,6 @@
                           </div>                       
                         </div>
                       </div>
-                      <!-- <div class="panel panel-info">
-                        <div class="panel-body">
-                         <div class="chinhsach">
-                            <li><span class="glyphicon glyphicon-hand-right"></span> Trong hộp có: {!!$data->packet!!}</li>
-                            <li><span class="glyphicon glyphicon-hand-right"></span> Bảo hành chính hãng: thân máy 12 tháng, pin 12 tháng, sạc 12 tháng</li>
-                            <li><span class="glyphicon glyphicon-hand-right"></span> Giao hàng tận nơi miễn phí trong 1 ngày</li>
-                            <li><span class="glyphicon glyphicon-hand-right"></span> 1 đổi 1 trong 1 tháng với sản phẩm lỗi</li>
-                         </div>
-                        </div>
-                      </div> -->
                       @if($data->status ==1)
                         <a href="{!!url('gio-hang/addcart/'.$data->id)!!}" title="" class="btn btn-large btn-block btn-primary" style="font-size: 20px;">Đặt hàng ngay</a>
                       @else
