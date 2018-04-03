@@ -20,7 +20,7 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="main-mav-top">
             <ul class="nav navbar-nav">
-              <li> <a href="{!!url('')!!}" title="" style="color: #FFFFFF;background-color: #2c3e50;"><b class="glyphicon glyphicon-home"></b> Trang chủ </a> </li>
+              <li> <a href="{!!url('')!!}" title="" style="color: #FFFFFF"><b class="glyphicon glyphicon-home"></b> Trang chủ </a> </li>
               <li>
                 <a href="{!!url('/giaynam')!!}" >Giày nam </a>                          
               </li>                                                  

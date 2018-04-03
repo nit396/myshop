@@ -8,7 +8,7 @@
             <div class="thumbnail mobile">              
               <div class="bt">
                 <div class="image-m pull-left">
-                  <img class="img-responsive" src="{!!url('uploads/products/'.$row->images)!!}" alt="{!!$row->name!!}">
+                  <img class="img-responsive" src="{!!url('public/uploads/products/'.$row->images)!!}" alt="{!!$row->name!!}">
                 </div>
                 <div class="intro pull-right">
                   <h1><small class="title-mobile">{!!$row->name!!}</small></h1>
@@ -36,11 +36,10 @@
                   @endif 
                     <li><span class="glyphicon glyphicon-ok-sign"></span></li> 
                   <span class="label label-warning">Thông tin sản phẩm</span> 
-                  <li><strong>Size</strong> : <i>  {!!$row->size!!}</i></li>
-                  <li><strong>Màn Hình</strong> : <i>{!!$row->screen!!} </i></li> 
-                  <li><strong>Camera</strong> : Trước  <i>{!!$row->cam1!!}</i> Sau <i>{!!$row->cam2!!}</i></li> 
-                  <li><strong>HĐH</strong> :<i> {!!$row->os!!} </i> <strong> Bộ nhớ trong</strong> :<i> {!!$row->storage!!} </i></li> 
-                  <li><strong>Pin</strong> :<i> {!!$row->pin!!}</i></li>
+                  <li><strong>Size</strong> : <i>{!!$row->size!!}</i></li>
+                  <li><strong>Color </strong> : <i>{!!$row->mau!!}</i></li>
+                  <li><strong>Rate</strong> : <i>{!!$row->rate!!}</i></li>
+                  <li><strong>Số lượng</strong> : <i>{!!$row->soluong!!} </i></li> 
                 </a>
               </div>
                 <span class="btn label-warning"><strong>{!!number_format($row->price)!!}</strong>Vnd </span>
